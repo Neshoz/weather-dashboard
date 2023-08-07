@@ -1,0 +1,50 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --sidebar-background: rgb(238, 242, 244);
+  --main-background: rgb(255, 255, 255);
+  --right-aside-background: rgb(35, 57, 86);
+
+  --gray-50: rgb(250, 250, 250);
+  --gray-100: rgb(193, 199, 208);
+  --gray-200: rgb(127, 142, 168);
+  --gray-300: rgb(131, 133, 142);
+  --gray-400: rgb(92, 106, 127);
+
+  --blue-50: rgb(63, 104, 254);
+  --blue-100: rgb(148, 176, 246);
+  --blue-200: rgb(53, 76, 130);
+  --blue-300: rgb(34, 49, 80);
+  --blue-900: rgb(17, 43, 74);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  color: var(--blue-900);
+}
+
+p {
+  color: var(--gray-200);
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}

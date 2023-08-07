@@ -1,0 +1,8 @@
+.container {
+  background: radial-gradient(
+      circle at top left,
+      rgb(68, 87, 112),
+      rgb(20, 44, 75)
+    ),
+    radial-gradient(circle at bottom left, rgb(16, 44, 89), rgb(23, 58, 125));
+}
