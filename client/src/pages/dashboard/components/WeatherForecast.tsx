@@ -1,4 +1,7 @@
-import { useWeatherForecastQuery } from "../../../api/queries";
+import {
+  useHistoricalWeatherQuery,
+  useWeatherForecastQuery,
+} from "../../../api/queries";
 import {
   ConditionIcon,
   Divider,
@@ -23,6 +26,7 @@ interface Props {
 
 export const WeatherForecast = ({ location }: Props) => {
   const { data, isLoading } = useWeatherForecastQuery(location);
+  // const { data: historicalWeather } = useHistoricalWeatherQuery(location);
 
   if (isLoading) {
     return null;

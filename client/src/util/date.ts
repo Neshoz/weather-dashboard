@@ -1,3 +1,5 @@
+import { ONE_DAY } from "./time";
+
 interface DateFormatOptions {
   variant?: "full" | "short";
 }
@@ -128,4 +130,12 @@ export function getRelativeTimeString(
   // Intl.RelativeTimeFormat do its magic
   const rtf = new Intl.RelativeTimeFormat(lang, { numeric: "auto" });
   return rtf.format(Math.floor(deltaSeconds / divisor), units[unitIndex]);
+}
+
+export function getDatesInternal(days: number) {
+  const dates: Date[] = [];
+  for (let i = 0; i < days; i++) {
+    dates.push(new Date(new Date().getTime() - i * ONE_DAY));
+  }
+  return dates;
 }

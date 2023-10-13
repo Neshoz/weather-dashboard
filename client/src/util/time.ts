@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+export const ONE_DAY = 24 * 60 * 60 * 1000;
+
 interface TimeFormatOptions {
   variant?: "full" | "short";
   hour: "numeric" | "2-digit";
